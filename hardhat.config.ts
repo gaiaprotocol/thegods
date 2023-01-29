@@ -3,6 +3,7 @@ import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-chai-matchers";
 import "@nomiclabs/hardhat-solhint";
 import "hardhat-tracer";
+require('@nomiclabs/hardhat-truffle5');
 
 import { HardhatUserConfig } from "hardhat/types";
 
