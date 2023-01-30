@@ -13,7 +13,7 @@
 
   2. [ ] Update name, symbol, baseURI in GaiaGods.deploy.ts
   3. [ ] Check again if holders and amounts in holderList.ts are correct
-  4. [ ] Be careful about a gas price
+  4. [ ] Be careful about a gas price <e.g) 15 gwei -> totally 0.585 ETH>
 
 - e.g)
   1. Deployer[https://goerli.etherscan.io/address/0x96497dae4a1117d940d1260e3669380c0a9be244]
