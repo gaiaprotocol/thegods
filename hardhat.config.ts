@@ -3,7 +3,7 @@ import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-chai-matchers";
 import "@nomiclabs/hardhat-solhint";
 import "hardhat-tracer";
-require('@nomiclabs/hardhat-truffle5');
+require("@nomiclabs/hardhat-truffle5");
 
 import { HardhatUserConfig } from "hardhat/types";
 
@@ -46,6 +46,11 @@ const config: HardhatUserConfig = {
             accounts,
             chainId: 8217,
             gasPrice: 250000000000,
+        },
+        goerli: {
+            url: `https://goerli.infura.io/v3/${process.env.INFURA_API_KEY}`,
+            accounts,
+            chainId: 5,
         },
         mumbai: {
             url: `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_API_KEY}`,

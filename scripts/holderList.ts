@@ -1,3 +1,4 @@
+// TODO: Replace treasury address
 export const treasury = "0x1230000000000000000000000000000000000321";
 export const holders = [
     "0x23c1bb2a48A6adBDAe0f3764492548AFb2441990",
