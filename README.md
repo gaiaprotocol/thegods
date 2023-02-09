@@ -2,6 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Mainnet
+- GaiaProtocolGods: [0x134590ACB661Da2B318BcdE6b39eF5cF8208E372](https://etherscan.io/address/0x134590ACB661Da2B318BcdE6b39eF5cF8208E372)
+
 ## Deploy
 
 - Use scripts/GaiaProtocolGods.deploy.ts
