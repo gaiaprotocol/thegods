@@ -13,10 +13,10 @@ async function main() {
     expect(symbol).to.not.be.equal("", "Symbol is not set yet");
     expect(baseURI).to.not.be.equal("", "BaseURI is not set yet");
 
-    const gods = await (await ethers.getContractFactory("GaiaGods")).deploy(name, symbol, baseURI);
+    const gods = await (await ethers.getContractFactory("GaiaProtocolGods")).deploy(name, symbol, baseURI);
 
     await gods.deployed();
-    console.log(`GaiaGods address: ${gods.address}`);
+    console.log(`GaiaProtocolGods address: ${gods.address}`);
 
     expect(treasury).to.not.be.equal("0x1230000000000000000000000000000000000321", "Treasury is not set yet");
 

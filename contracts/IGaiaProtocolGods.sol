@@ -3,7 +3,7 @@ pragma solidity ^0.8.17;
 
 import "./standards/ERC721A.sol";
 
-interface IGaiaGods is IERC721A {
+interface IGaiaProtocolGods is IERC721A {
     error PausedNow();
 
     event SetBaseURI(string baseURI_);

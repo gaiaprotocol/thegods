@@ -11,7 +11,7 @@ import { Wallet, utils, constants } from "ethers";
 const { parseEther } = utils;
 const { AddressZero, MaxUint256 } = constants;
 
-describe("GaiaGods", function () {
+describe("GaiaProtocolGods", function () {
     let gods: any;
     let alice: SignerWithAddress, holder0: SignerWithAddress;
 
@@ -20,7 +20,7 @@ describe("GaiaGods", function () {
 
     before(async () => {
         [holder0, alice] = await ethers.getSigners();
-        gods = await (await ethers.getContractFactory("GaiaGods")).deploy("a", "b", "c/");
+        gods = await (await ethers.getContractFactory("GaiaProtocolGods")).deploy("a", "b", "c/");
         await gods.airdrop(holders.slice(0, 400), amounts.slice(0, 400));
         await gods.airdrop(holders.slice(400), amounts.slice(400));
 
@@ -311,7 +311,7 @@ describe("GaiaGods", function () {
             });
             context("when the NFTType of gods is settled incorrectly", () => {
                 it("reverts", async () => {
-                    const gods2 = await (await ethers.getContractFactory("GaiaGods")).deploy("", "", "");
+                    const gods2 = await (await ethers.getContractFactory("GaiaProtocolGods")).deploy("", "", "");
                     await gods2.airdrop([gi.address], [1]);
                     await gi.setNFTInfo([gods2.address], [{ price: parseEther("10000"), nftType: MINTABLE }]);
 
@@ -396,7 +396,7 @@ describe("GaiaGods", function () {
             });
             context("when the NFTType of gods is settled incorrectly", () => {
                 it("reverts", async () => {
-                    const gods2 = await (await ethers.getContractFactory("GaiaGods")).deploy("", "", "");
+                    const gods2 = await (await ethers.getContractFactory("GaiaProtocolGods")).deploy("", "", "");
                     await gods2.airdrop([gi.address], [2]);
                     await gi.setNFTInfo([gods2.address], [{ price: parseEther("10000"), nftType: MINTABLE }]);
 

@@ -4,9 +4,9 @@ pragma solidity ^0.8.17;
 import "./standards/ERC721A.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "./IGaiaGods.sol";
+import "./IGaiaProtocolGods.sol";
 
-contract GaiaGods is IGaiaGods, Pausable, Ownable, ERC721A {
+contract GaiaProtocolGods is IGaiaProtocolGods, Pausable, Ownable, ERC721A {
     string internal __baseURI;
     bool public airdropCompleted;
 

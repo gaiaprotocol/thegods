@@ -1,13 +1,13 @@
 const { shouldBehaveLikeERC721, shouldBehaveLikeERC721Metadata } = require("./ERC721.behavior");
 
-const GaiaGods = artifacts.require("GaiaGods");
+const GaiaProtocolGods = artifacts.require("GaiaProtocolGods");
 
 contract("ERC721", function (accounts) {
     const name = "Non Fungible Token";
     const symbol = "NFT";
 
     beforeEach(async function () {
-        this.token = await GaiaGods.new(name, symbol, "");
+        this.token = await GaiaProtocolGods.new(name, symbol, "");
     });
 
     shouldBehaveLikeERC721("ERC721", ...accounts);
