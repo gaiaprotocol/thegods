@@ -11,7 +11,7 @@ async function main() {
     expect(symbol).to.not.be.equal("", "Symbol is not set yet");
     expect(baseURI).to.not.be.equal("", "BaseURI is not set yet");
 
-    const gods = await (await ethers.getContractFactory("GaiaProtocolGods")).deploy(name, symbol, baseURI);
+    const gods = await (await ethers.getContractFactory("GaiaProtocolGods")).deploy(name, symbol, baseURI, { maxFeePerGas: ethers.utils.parseUnits("25", "gwei"), maxPriorityFeePerGas: ethers.utils.parseUnits("0.3", "gwei") });
 
     await gods.deployed();
     console.log(`GaiaProtocolGods address: ${gods.address}`);
