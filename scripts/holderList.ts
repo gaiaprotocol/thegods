@@ -12,4 +12,4 @@ for (const holder of holders) {
 holders.push(treasury);
 amounts.push(200);
 
-//console.log(holders, amounts);
+console.log(holders, amounts);
