@@ -1,6 +1,6 @@
 # OS X
 .DS_Store*
-Icon?
+#Icon?
 ._*
 
 # Windows
@@ -18,15 +18,23 @@ package-lock.json
 *.log
 *.gz
 
-# local env variables
+# yarn
+yarn.lock
+
+# secure
 .env
 
-# vscode
-.history
+# Hardhat files
+/cache
+/artifacts
 
-# hardhat
-cache
-artifacts
+# TypeChain files
+/typechain
+/typechain-types
 
-# typechain
-typechain*
+# solidity-coverage files
+/coverage
+/coverage.json
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
